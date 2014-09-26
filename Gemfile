@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 gem 'bootstrap-sass','3.2.0.2'
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 
 
 # Setup development, test, and production environments
@@ -15,6 +15,7 @@ end
 
 group :test do
 	gem 'capybara'
+	gem 'factory_girl_rails'
 end
 
 group :production do
