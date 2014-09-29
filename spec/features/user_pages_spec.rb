@@ -37,6 +37,10 @@ describe "User pages" do
       end
     end 
 
+    describe "delete links" do
+      it { should_not have_link('delete') }
+end
+
     before do
       sign_in FactoryGirl.create(:user)
       FactoryGirl.create(:user, name: "Bob", email: "bob@example.com")
